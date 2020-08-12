@@ -1,3 +1,6 @@
+// Name: Tommy Cao
+// Date: 8/11/20
+// Description:
 // Every pair of characters has been swapped. 
 // Help me undo this so I can understand my strings again.
 module.exports = {
@@ -7,7 +10,6 @@ module.exports = {
         for ( var i=0; i < inStr.length; i=i+2 ) {
             outStr.push(inStr[i+1]);
             outStr.push(inStr[i]);
-            //console.log(outStr);
         }
         return outStr.join('');     
     } 

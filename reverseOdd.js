@@ -10,10 +10,8 @@ module.exports = {
 
       for (let i=0; i < inStrArray.length; i++) {
          wordStr = inStrArray[i];
-         //console.log(wordStr, wordStr.length);
          if (wordStr.length % 2 !== 0) { // find odd length
             wordStr = wordStr.split('').reverse().join(''); // Note that reverse() will change original array
-            //console.log(i, wordStr);
             inStrArray[i] = wordStr; // insert new word back into array
          }
       }

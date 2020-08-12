@@ -18,21 +18,17 @@ module.exports = {
 		for (j = 0; j < string2.length; ++j) {
 			char1 = string1.charAt(i);
 			char2 = string2.charAt(j);
-            // console.log(char1, char2);
 			if (char1 === char2) {
-                // console.log("char1 === char2");
 				if (i > 0 && j > 0) {
 					comparsions[i][j] = comparsions[i - 1][j - 1] + 1;
 				} else {
 					comparsions[i][j] = 1;
 				}
 			} else {
-                // console.log("char1 !== char2");
 				comparsions[i][j] = 0;
 			}
 
 			if (comparsions[i][j] > maxSubStrLength) {
-                // console.log("Max string found");
 				maxSubStrLength = comparsions[i][j];
 				lastMaxSubStrIndex = i;
 			}
